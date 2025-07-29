@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
-@RequestMapping("url/")
+@RequestMapping("/url")
 public class UrlController {
     
     @Autowired
     private UrlService urlService;
 
     @PostMapping("/shorten")
-    public String createShortUrl(@RequestParam String orignlUrl){
-        return urlService.createShortUrl(orignlUrl);
+    public String createShortUrl(@RequestParam String orignalUrl){
+        return urlService.createShortUrl(orignalUrl);
     }
 
     @GetMapping("{shortUrl}")
