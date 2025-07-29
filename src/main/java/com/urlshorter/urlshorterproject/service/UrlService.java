@@ -39,7 +39,7 @@ public class UrlService {
 
         for(int i=0; i<shortUrlLength; i++){
             int index = random.nextInt(CHARSET.length());
-            shortUrl.append(index);
+            shortUrl.append(CHARSET.charAt(index));
         }
 
         return shortUrl.toString();
