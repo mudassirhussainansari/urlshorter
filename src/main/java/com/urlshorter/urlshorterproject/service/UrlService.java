@@ -13,8 +13,6 @@ public class UrlService {
     @Autowired
     private UrlRepository urlRepository;
 
-    private static final String BASE_URL = "http://localhost:8080/";
-
     private static final String CHARSET ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     private static final int shortUrlLength = 6;
