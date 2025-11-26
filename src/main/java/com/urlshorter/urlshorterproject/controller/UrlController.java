@@ -18,7 +18,7 @@ public class UrlController {
     @Autowired
     private UrlService urlService;
 
-    @PostMapping("/shorten")
+    @PostMapping
     public String createShortUrl(@RequestParam String orignalUrl){
         return urlService.createShortUrl(orignalUrl);
     }
